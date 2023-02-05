@@ -1,0 +1,7 @@
+require_relative 'Conta'
+
+desc 'Say hello!'
+task :hello_world do
+  contaTeste = Conta.new 1, "Eu"
+  puts contaTeste.titular
+end
