@@ -4,7 +4,13 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="tabuleiro" class="com.projetosbase.cafecomxadrez.Tabuleiro">
+    <bean id="torre" class="com.projetosbase.cafecomxadrez.entities.Peca">
+        <property name="id" value="1"/>
+        <property name="isWhite" value="true"/>
+    </bean>
+
+    <bean id="casa1x1" class="com.projetosbase.cafecomxadrez.entities.Casa">
+        <property name="peca" ref="torre"/>
     </bean>
 
 </beans>
