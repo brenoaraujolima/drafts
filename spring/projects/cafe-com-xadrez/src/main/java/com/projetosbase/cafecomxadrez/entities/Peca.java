@@ -1,6 +1,6 @@
 package com.projetosbase.cafecomxadrez.entities;
 
-public class Peca {
+public abstract class Peca {
 	public int id;
 	public Boolean isWhite;
 
@@ -20,9 +20,4 @@ public class Peca {
 	public void setIsWhite(boolean isWhite) {
 		this.isWhite = isWhite;
 	}
-
-//	Peca(int id, boolean isWhite) {
-//		this.id = id;
-//		this.isWhite = isWhite;
-//	}
 }
