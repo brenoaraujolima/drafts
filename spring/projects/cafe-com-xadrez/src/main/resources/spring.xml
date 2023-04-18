@@ -262,32 +262,96 @@
         <property name="peca" ref="reiPreto"/>
     </bean>
 
-<!--    <bean id="tanuleiro" class="com.projetosbase.cafecomxadrez.entities.Tabuleiro">-->
-<!--        <property name="casas">-->
-<!--            <list>-->
-<!--                <list>-->
-<!--                    <ref bean="casa1x1"></ref>-->
-<!--                    <ref bean="casa1x1"></ref>-->
-<!--                    <ref bean="casa1x1"></ref>-->
-<!--                    <bean id="casa1x1" class="com.projetosbase.cafecomxadrez.entities.Casa">-->
-<!--                        <property name="peca" ref="torre"/>-->
-<!--                    </bean>-->
-<!--                    <bean id="casa1x1" class="com.projetosbase.cafecomxadrez.entities.Casa">-->
-<!--                        <property name="peca" ref="torre"/>-->
-<!--                    </bean>-->
-<!--                </list>-->
-<!--                <list>-->
-<!--                    <ref bean="casa1x1"></ref>-->
-<!--                    <ref bean="casa1x1"></ref>-->
-<!--                    <ref bean="casa1x1"></ref>-->
-<!--                    <bean id="casa1x1" class="com.projetosbase.cafecomxadrez.entities.Casa">-->
-<!--                        <property name="peca" ref="torre"/>-->
-<!--                    </bean>-->
-<!--                    <bean id="casa1x1" class="com.projetosbase.cafecomxadrez.entities.Casa">-->
-<!--                        <property name="peca" ref="torre"/>-->
-<!--                    </bean>-->
-<!--                </list>-->
-<!--            </list>-->
-<!--        </property>-->
-<!--    </bean>-->
+    <bean id="semPeca" class="com.projetosbase.cafecomxadrez.entities.Casa">
+        <property name="peca" value="#{ null }"/>
+    </bean>
+
+<!--    Para importar-->
+<!--    <import resource="classpath:config/spring/that-other-xml-conf.xml"/>-->
+    <bean id="tabuleiro" class="com.projetosbase.cafecomxadrez.entities.Tabuleiro">
+        <property name="casas">
+            <list>
+                <list>
+                    <ref bean="casaA8"></ref>
+                    <ref bean="casaB8"></ref>
+                    <ref bean="casaC8"></ref>
+                    <ref bean="casaD8"></ref>
+                    <ref bean="casaE8"></ref>
+                    <ref bean="casaF8"></ref>
+                    <ref bean="casaG8"></ref>
+                    <ref bean="casaH8"></ref>
+                </list>
+                <list>
+                    <ref bean="casaA7"></ref>
+                    <ref bean="casaB7"></ref>
+                    <ref bean="casaC7"></ref>
+                    <ref bean="casaD7"></ref>
+                    <ref bean="casaE7"></ref>
+                    <ref bean="casaF7"></ref>
+                    <ref bean="casaG7"></ref>
+                    <ref bean="casaH7"></ref>
+                </list>
+                <list>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                </list>
+                <list>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                </list>
+                <list>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                </list>
+                <list>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                    <ref bean="semPeca"></ref>
+                </list>
+                <list>
+                    <ref bean="casaA2"></ref>
+                    <ref bean="casaB2"></ref>
+                    <ref bean="casaC2"></ref>
+                    <ref bean="casaD2"></ref>
+                    <ref bean="casaE2"></ref>
+                    <ref bean="casaF2"></ref>
+                    <ref bean="casaG2"></ref>
+                    <ref bean="casaH2"></ref>
+                </list>
+                <list>
+                    <ref bean="casaA1"></ref>
+                    <ref bean="casaB1"></ref>
+                    <ref bean="casaC1"></ref>
+                    <ref bean="casaD1"></ref>
+                    <ref bean="casaE1"></ref>
+                    <ref bean="casaF1"></ref>
+                    <ref bean="casaG1"></ref>
+                    <ref bean="casaH1"></ref>
+                </list>
+            </list>
+        </property>
+    </bean>
 </beans>
