@@ -5,11 +5,15 @@ import org.springframework.stereotype.Component;
 
 @Component("peca")
 public class Peca {
+	@Value("6")
 	public int id;
 
 //	public Boolean isWhite;
+	public Peca() {
 
-	public Peca(	@Value("4") int id) {
+	}
+
+	public Peca( int id) {
 		this.id = id;
 //		this.isWhite = isWhite;
 	}

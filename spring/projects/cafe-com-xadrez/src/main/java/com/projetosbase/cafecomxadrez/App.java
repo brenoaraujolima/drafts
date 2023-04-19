@@ -8,8 +8,7 @@ import com.projetosbase.cafecomxadrez.entities.Peca;
 
 public class App {
     public static void main( String[] args ) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.scan("com.projetosbase.cafecomxadrez.entities");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         context.refresh();
         Peca peca = (Peca) context.getBean("peca");
         System.out.println("let");
