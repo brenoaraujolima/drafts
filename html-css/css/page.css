@@ -1,0 +1,23 @@
+body {
+    font-size: 18px;
+    color: blue;
+}
+
+p {
+    font-family: monospace;
+    color: green;
+}
+
+span {
+    color: initial
+}
+
+blockquote {
+    color:  rgb(67, 121, 94);
+    background-color: yellow;
+}
+
+a[href="globo.com"] {
+    color: red;
+}
+
