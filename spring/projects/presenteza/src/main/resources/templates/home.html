@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Presenteza</title>
+    <link rel="stylesheet" th:href="@{/home.css}" >
 </head>
 <body>
     <h1>Presenteza</h1>
+    <tr th:each="prod : ${products}">
+        <p th:text="${prod.productName}">placeholder value</p>
+    </tr>
 </body>
 </html>
