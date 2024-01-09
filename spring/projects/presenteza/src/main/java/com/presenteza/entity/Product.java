@@ -5,9 +5,7 @@ public class Product {
 	private int cdProduct;
 	private String productName;
 
-	public Product() {
-
-	}
+	public Product() { }
 
 	public Product(int cdProduct, String productName) {
 		this.cdProduct = cdProduct;

@@ -1,6 +1,4 @@
-package com.presenteza.data;
-
-import java.util.ArrayList;
+package com.presenteza.repository;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.presenteza.entity.Product;
 
 @Repository
-public class JdbcProductRepository implements ProductRepository {
+public class JdbcProductRepository {
 
 	@Autowired
 	private JdbcTemplate jdbc;
