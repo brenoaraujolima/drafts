@@ -11,11 +11,10 @@ public class PokemonStartersImpl implements PokemonStarters {
 	private WaterPokemon waterPokemon;
 	private GrassPokemon grassPokemon;
 
-
-	public PokemonStartersImpl() {
-		this.firePokemon = new Charmander();
-		this.waterPokemon = new Squirtle();
-		this.grassPokemon = new Bulbasaur();
+	public PokemonStartersImpl(FirePokemon firePokemon, WaterPokemon waterPokemon, GrassPokemon grassPokemon) {
+		this.firePokemon = firePokemon;
+		this.waterPokemon = waterPokemon;
+		this.grassPokemon = grassPokemon;
 	}
 
 	@Override

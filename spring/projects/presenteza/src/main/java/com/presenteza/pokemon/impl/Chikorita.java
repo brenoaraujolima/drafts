@@ -2,10 +2,9 @@ package com.presenteza.pokemon.impl;
 
 import com.presenteza.pokemon.GrassPokemon;
 
-public class Bulbasaur implements GrassPokemon {
-
+public class Chikorita implements GrassPokemon {
 	@Override
 	public String print() {
-		return "Bulbasaur";
+		return "Chikorita";
 	}
 }
