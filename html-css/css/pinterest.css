@@ -1,0 +1,22 @@
+body {
+    background: black;
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav, main {
+    padding: 12px;
+}
+
+img {
+    width: 100%;
+}
