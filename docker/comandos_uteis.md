@@ -27,6 +27,9 @@ CTRL + D
 # Sair do container, mas sem finalizar a execução do processo entrypoint
 CTRL + P + Q
 
+# Caso a alternativa acima nao funcione, forneça um atalho personalizado para isso
+docker run -ti --detach-keys="ctrl-z" ubuntu
+
 # Se conectar a um container já em execução
 docker container attach <ID_CONTAINER>
 
