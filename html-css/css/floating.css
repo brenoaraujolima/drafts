@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0.5rem;
+  font-family: "Asar", serif;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: #000;
+  margin-bottom: 0.8rem;
+}
+
+li {
+  color: white;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+}
+
+li a {
+  padding: inherit;
+}
+
+
+li:hover {
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+
+li:last-child {
+  float: right;
+}
+
+div {
+  background-color: #111;
+  color: whitesmoke;
+  padding: 1rem;
+  width: 30vw;
+  height: 30vw;
+  margin-bottom: 0.5rem;
+}
+
+div.left {
+  float: left;
+  margin-right: 1rem;
+}
+
+div.right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.limpar {
+  clear: both;
+}
+
+
